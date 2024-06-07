@@ -103,6 +103,9 @@ h2 ~ p {
 .footer-nav a {
   color: #ccc;
 }
+.footer .social-list {
+  margin-top: 40px;
+}
 
 /* HERO STYLES */
 .full-hero {
@@ -134,12 +137,9 @@ h2 ~ p {
   background-color: rgba(150, 250, 150, 0.5);
 }
 .social-list {
-  bottom: 10px;
   list-style: none;
   padding: 0;
-  position: absolute;
   text-align: center;
-  z-index: 0;
 }
 .social-list > li {
   display: inline-block;
