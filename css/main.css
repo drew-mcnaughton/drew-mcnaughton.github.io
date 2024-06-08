@@ -20,16 +20,6 @@ h2 ~ p {
   max-width: 70%;
   text-align: center;
 }
-.nav-links a {
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.nav-links a:hover,
-.nav-links a:active {
-  color: #ed6e2f;
-}
 
 /* HEADER STYLES */
 .header {
@@ -72,6 +62,16 @@ h2 ~ p {
 .header-nav a {
   color: #fff;
 }
+.nav-links a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ed6e2f;
+}
 .header-nav > li:first-child a {
   color: #ed6e2f;
 }
@@ -103,18 +103,29 @@ h2 ~ p {
 .footer-nav a {
   color: #ccc;
 }
-.footer .social-list {
-  margin-top: 40px;
-}
+/* .footer .social-list { */
+/*  margin-top: 40px; */
+/* } */
 
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
-  position: relative;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
+}
+.hero-home {
+  background-image: url(https://cdn.learnenough.com/le-css/shark.jpg);
+  background-position: center top;
 }
 
 /* SOCIAL STYLES */
+.social-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
 .social-link {
   background: rgba(150, 150, 150, 0.5);
   border-radius: 99px;
@@ -132,19 +143,14 @@ h2 ~ p {
   vertical-align: middle;
   width: 2.5em;
 }
-.social-link:hover,
-.social-link:active {
-  background-color: rgba(150, 250, 150, 0.5);
-}
-.social-list {
-  list-style: none;
-  padding: 0;
-  text-align: center;
-}
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
 }
+/* .social-link:hover, */
+/* .social-link:active { */
+/*  background-color: rgba(150, 250, 150, 0.5); */
+/* } */
 
 /* BIO STYLES */
 bio-wrapper {
@@ -155,12 +161,12 @@ bio-wrapper {
 }
 .bio-box {
   border: 1px dotted black;
-  border-color: transparent black black transparent;
+  /* border-color: transparent black black transparent; */
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
   margin: 40px 1% 0;
-  padding: 0 2% 2%;
+  padding: 2%; /* was 0 2% 2% before */
   width: 23%;
 }
 .bio-box h3 {
@@ -178,9 +184,9 @@ bio-wrapper {
 }
 .bio-copy {
   font-size: 1em;
-  line-height: 1.5;
+/*  line-height: 1.5; */
 }
 .bio-copy a {
   color: green;
-  padding: 20px;
+/*  padding: 20px; */
 }
