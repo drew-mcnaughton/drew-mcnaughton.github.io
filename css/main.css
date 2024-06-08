@@ -205,9 +205,9 @@ h2 ~ p {
 }
 .bio-copy {
   font-size: 1em;
-/*  line-height: 1.5; */
+  line-height: 1.5;
 }
 .bio-copy a {
   color: green;
-/*  padding: 20px; */
+  padding: 20px;
 }
