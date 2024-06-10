@@ -29,6 +29,7 @@ a {
 }
 p {
   line-height: 1.5;
+  margin: 0.75em 0;
 }
 h2 ~ p {
   font-size: 0.8em;
@@ -209,17 +210,28 @@ h2 ~ p {
   text-align: center;
 }
 .home-callout {
+  align-items: center; /* Flexbox styling to centre items vertically in container */
   background-color: #000;
   color: #fff;
+  display: flex; /* This is flexbox container level */
   padding: 7vh 0;
 }
+.home-callout h3 {
+  color: inherit;
+  margin-top: 1em;
+}
 .callout-title {
+  flex-basis: 0; /* Makes the flexbox item minimised */
+  flex-grow: 1; /* Sets this flexbox item to grow fully proportionally */
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
 }
 .callout-copy {
+  flex-basis: 45em;
+  flex-shrink: 0; /* Stops the content in this flexbox item reducing in size */
   font-size: 0.8rem;
+  padding: 0 3vw;
 }
 
 /* BIO STYLES */
