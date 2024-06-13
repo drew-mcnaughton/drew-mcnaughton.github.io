@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
 }
 .content-container {
-  flex-grow: 1;
+  flex: 1 1 auto;
   padding-top: 10vh;
   width: 100%;
 }
@@ -157,15 +157,18 @@ h2 ~ p {
   margin-top: 1em;
 }
 .callout-title {
-  flex-basis: 0; /* Makes the flexbox item minimised */
-  flex-grow: 1; /* Sets this flexbox item to grow fully proportionally */
+  /* flex-basis: 0;  Makes the flexbox item minimised */
+  /* flex-grow: 1;  Sets this flexbox item to grow fully proportionally */
+  /* flex: 1 is shorthand for the above as flex-shrink: 1 is default */
+  flex: 1;
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
 }
 .callout-copy {
-  flex-basis: 45em;
-  flex-shrink: 0; /* Stops the content in this flexbox item reducing in size */
+  /* flex-basis: 45em; */
+  /* flex-shrink: 0;  Stops the content in this flexbox item reducing in size */
+  flex: 0 0 45em /* This is shorthand for the above */
   font-size: 0.8rem;
   padding: 0 3vw;
 }
