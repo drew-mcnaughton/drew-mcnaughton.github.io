@@ -1,5 +1,6 @@
 @import url("includes/header.css");
 @import url("includes/footer.css");
+@import url("layouts/posts/blog.css");
 
 /* GLOBAL STYLES */
 html {
@@ -49,10 +50,10 @@ h2 ~ p {
 }
 
 /* HEADER STYLES */
-/* contained in includes/header.css called by @import above*/
+/* contained in css/includes/header.css called by @import above*/
 
 /* FOOTER STYLES */
-/* contained in includes/footer.css called by @import above*/
+/* contained in css/includes/footer.css called by @import above*/
 
 /* NAVIGATION STYLES */
 /* Required for both header and footer styling */
@@ -108,6 +109,11 @@ h2 ~ p {
   background-color: #000;
   color: #fff;
 }
+.half-hero {
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+}
 
 /* SOCIAL STYLES */
 .social-list {
@@ -150,6 +156,17 @@ h2 ~ p {
 .home-section h2 {
   margin-bottom: 1.5rem;
   text-align: center;
+}
+.home-section h4 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.home-section .post-header {
+  text-align: center;
+}
+.home-section .blog-posts {
+  margin: auto;
+  width: 75%;
 }
 .home-callout {
   align-items: center; /* Flexbox styling to centre items vertically in container */
@@ -307,47 +324,4 @@ h2 ~ p {
 }
 
 /* BLOG STYLES */
-.blog-recent {
-  text-align: right;
-}
-.blog-title-list {
-  list-style: none;
-  padding: 0;
-}
-.blog-title-list li ~ li {
-  margin-top: 1.5em;
-}
-.blog-title-list span {
-  color: #999;
-  display: block;
-  font-size: 0.8em;
-  font-style: italic;
-  margin-top: 0.5em;
-}
-.blog-posts ~ .blog-posts {
-  border-top: 1px dotted rgba(0, 0, 0, 0.1);
-  margin-top: 4em;
-  padding-top: 4em;
-}
-.blog-posts .post-header {
-  font-size: 0.8rem;
-}
-.post-header {
-  margin-bottom: 1.5em;
-}
-.post-header img,
-.post-header .social-link {
-  margin-right: 0.5em;
-}
-.post-header img {
-  border-radius: 99px;
-  display: inline-block;
-  height: 6em;
-  margin-bottom: 1.5em;
-}
-.posts-image {
-  background-position: center;
-  background-size: cover;
-  height: 6em;
-  margin-bottom: 1.5em;
-}
+/* contained in css/layouts/posts/blog.css called by @import above*/
