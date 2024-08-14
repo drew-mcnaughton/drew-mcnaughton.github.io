@@ -6,7 +6,7 @@ categories: update
 ---
 I spent some of today having a look at the Minima theme on GitHub.
 
-[Minima Theme] (https://github.com/jekyll/minima)
+[Minima Theme](https://github.com/jekyll/minima)
 
 As this is the theme that all new Jekyll sites have included it seemed
 like a good place to start. I think I now get how the themes have the
