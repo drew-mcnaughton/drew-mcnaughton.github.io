@@ -10,4 +10,5 @@ As it develops and changes I will most likely be posting about it.
 
 So stay tuned!
 
-Also feel free to read more on the *About* page.
+Also feel free to read more on the [About] 
+(https://drew-mcnaughton.github.io/about) page.
